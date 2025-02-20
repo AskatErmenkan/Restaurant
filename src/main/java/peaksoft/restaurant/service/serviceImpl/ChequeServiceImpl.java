@@ -77,5 +77,4 @@ public class ChequeServiceImpl implements ChequeService {
         chequeResponseInfo.setWaiterName(cheque.getEmployee().getFirstName());
         return chequeResponseInfo;
     }
-
 }

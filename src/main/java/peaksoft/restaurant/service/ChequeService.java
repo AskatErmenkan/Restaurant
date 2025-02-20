@@ -8,8 +8,8 @@ import peaksoft.restaurant.dto.response.cheque.ChequeResponseInfo;
 
 @Service
 public interface ChequeService {
-//    SimpleResponse createChequeWithEmployee(Long employeeId, ChequeRequest chequeRequest);
+    SimpleResponse createChequeWithEmployee(Long employeeId, ChequeRequest chequeRequest);
 
-//    ChequeResponseInfo getChequeInfo(Long chequeId);
+    ChequeResponseInfo getChequeInfo(Long chequeId);
 
 }

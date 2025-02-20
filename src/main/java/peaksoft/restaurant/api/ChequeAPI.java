@@ -15,17 +15,13 @@ import peaksoft.restaurant.service.ChequeService;
 public class ChequeAPI {
     private final ChequeService chequeService;
 
-//    @PostMapping("/create/{id}")
-//    public SimpleResponse createCheque(@PathVariable Long employeeId, @RequestBody ChequeRequest chequeRequest) {
-//           return chequeService.createChequeWithEmployee(employeeId, chequeRequest);
-//    }
+    @PostMapping("/create/{id}")
+    public SimpleResponse createCheque(@PathVariable Long id, @RequestBody ChequeRequest chequeRequest) {
+           return chequeService.createChequeWithEmployee(id, chequeRequest);
+    }
 
-//    @GetMapping("/{chequeId}")
-//    public ChequeResponseInfo getCheque(@PathVariable Long chequeId) {
-//      return chequeService.getChequeInfo(chequeId);
-//    }
-
-
-
-
+    @GetMapping("/{chequeId}")
+    public ChequeResponseInfo getCheque(@PathVariable Long chequeId) {
+      return chequeService.getChequeInfo(chequeId);
+    }
 }
